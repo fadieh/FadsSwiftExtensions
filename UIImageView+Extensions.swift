@@ -8,8 +8,8 @@ import UIKit
 extension UIImageView {
     
     // Mark: Make Image Circular
-    func makeCircular(_ imageHeight: CGFloat) -> CGFloat {
-        return imageHeight / 2
+    func makeCircular(_ imageHeight: CGFloat) {
+        self.layer.cornerRadius = imageHeight / 2
     }
     
     // Mark: Load From Url
